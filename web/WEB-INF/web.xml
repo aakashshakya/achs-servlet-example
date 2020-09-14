@@ -1,48 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app>
+    <servlet>
+        <servlet-name>DemoServlet</servlet-name>
+        <servlet-class>com.servlet.application.DemoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DemoServlet</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
    
     <servlet>
-       <servlet-name>DemoServlet</servlet-name>
-       <servlet-class>com.servlet.application.DemoServlet</servlet-class>
-   </servlet>
-   <servlet-mapping>
-       <servlet-name>DemoServlet</servlet-name>
-       <url-pattern>/home</url-pattern>
-   </servlet-mapping>
+        <servlet-name>ServletGetRequestExample</servlet-name>
+        <servlet-class>com.servlet.application.ServletGetRequestExample</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletGetRequestExample</servlet-name>
+        <url-pattern>/getRequest</url-pattern>
+    </servlet-mapping>
    
-   <servlet>
-       <servlet-name>ServletGetRequestExample</servlet-name>
-       <servlet-class>com.servlet.application.ServletGetRequestExample</servlet-class>
-   </servlet>
-   <servlet-mapping>
-       <servlet-name>ServletGetRequestExample</servlet-name>
-       <url-pattern>/getRequest</url-pattern>
-   </servlet-mapping>
+    <servlet>
+        <servlet-name>ServletPostRequestExample</servlet-name>
+        <servlet-class>com.servlet.application.ServletPostRequestExample</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletPostRequestExample</servlet-name>
+        <url-pattern>/postRequest</url-pattern>
+    </servlet-mapping>
    
-   <servlet>
-       <servlet-name>ServletPostRequestExample</servlet-name>
-       <servlet-class>com.servlet.application.ServletPostRequestExample</servlet-class>
-   </servlet>
-   <servlet-mapping>
-       <servlet-name>ServletPostRequestExample</servlet-name>
-       <url-pattern>/postRequest</url-pattern>
-   </servlet-mapping>
+    <servlet>
+        <servlet-name>InitilizationParameterExample</servlet-name>
+        <servlet-class>com.servlet.application.InitilizationParameterExample</servlet-class>
+        <init-param>
+            <param-name>dbUsername</param-name>
+            <param-value>root</param-value>
+        </init-param>
+        <init-param>
+            <param-name>dbPassword</param-name>
+            <param-value>hello-world</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InitilizationParameterExample</servlet-name>
+        <url-pattern>/initParam</url-pattern>
+    </servlet-mapping>
    
-   <servlet>
-       <servlet-name>InitilizationParameterExample</servlet-name>
-       <servlet-class>com.servlet.application.InitilizationParameterExample</servlet-class>
-       <init-param>
-           <param-name>dbUsername</param-name>
-           <param-value>root</param-value>
-       </init-param>
-       <init-param>
-           <param-name>dbPassword</param-name>
-           <param-value>hello-world</param-value>
-       </init-param>
-   </servlet>
-   <servlet-mapping>
-       <servlet-name>InitilizationParameterExample</servlet-name>
-       <url-pattern>/initParam</url-pattern>
-   </servlet-mapping>
+    <servlet>
+        <servlet-name>CreateCookieExample</servlet-name>
+        <servlet-class>com.servlet.application.cookie.CreateCookieExample</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateCookieExample</servlet-name>
+        <url-pattern>/cookieRequest</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteCookieExample</servlet-name>
+        <servlet-class>com.servlet.application.cookie.DeleteCookieExample</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteCookieExample</servlet-name>
+        <url-pattern>/deleteCookie</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DynamicCookieCreation</servlet-name>
+        <servlet-class>com.servlet.application.cookie.DynamicCookieCreation</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DynamicCookieCreation</servlet-name>
+        <url-pattern>/dynamicCookieRequest</url-pattern>
+    </servlet-mapping>
    
 </web-app>
