@@ -70,5 +70,42 @@
         <servlet-name>DynamicCookieCreation</servlet-name>
         <url-pattern>/dynamicCookieRequest</url-pattern>
     </servlet-mapping>
+    
+        
+    <servlet>
+        <servlet-name>CreateSessionExample</servlet-name>
+        <servlet-class>com.servlet.application.session.CreateSessionExample</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateSessionExample</servlet-name>
+        <url-pattern>/createSession</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DeleteSessionExample</servlet-name>
+        <servlet-class>com.servlet.application.session.DeleteSessionExample</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteSessionExample</servlet-name>
+        <url-pattern>/deleteSession</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>LoginSessionExample</servlet-name>
+        <servlet-class>com.servlet.application.session.login.LoginSessionExample</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginSessionExample</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>LogoutSessionExample</servlet-name>
+        <servlet-class>com.servlet.application.session.login.LogoutSessionExample</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutSessionExample</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
    
 </web-app>
