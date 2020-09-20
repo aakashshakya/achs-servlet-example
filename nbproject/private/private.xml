@@ -4,10 +4,15 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/home/aakash/NetBeansProjects/DemoApplication/web/WEB-INF/web.xml</file>
+            <file>file:/home/aakash/NetBeansProjects/DemoApplication/web/view/add_student.jsp</file>
+            <file>file:/home/aakash/NetBeansProjects/DemoApplication/src/java/com/servlet/application/mvc/model/dao/StudentDAO.java</file>
+            <file>file:/home/aakash/NetBeansProjects/DemoApplication/web/view/includes/header.jsp</file>
+            <file>file:/home/aakash/NetBeansProjects/DemoApplication/web/view/includes/footer.jsp</file>
+            <file>file:/home/aakash/NetBeansProjects/DemoApplication/src/java/com/servlet/application/mvc/controller/StudentController.java</file>
             <file>file:/home/aakash/NetBeansProjects/DemoApplication/src/java/com/servlet/application/jsp/RedirectWithDataToJSP.java</file>
-            <file>file:/home/aakash/NetBeansProjects/DemoApplication/web/dulalvai.jsp</file>
+            <file>file:/home/aakash/NetBeansProjects/DemoApplication/web/view/students.jsp</file>
+            <file>file:/home/aakash/NetBeansProjects/DemoApplication/src/java/com/servlet/application/mvc/model/Students.java</file>
             <file>file:/home/aakash/NetBeansProjects/DemoApplication/web/first.jsp</file>
-            <file>file:/home/aakash/NetBeansProjects/DemoApplication/web/index.html</file>
         </group>
     </open-files>
 </project-private>
