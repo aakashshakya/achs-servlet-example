@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app>
+    <!--Basic servlet mapping-->
     <servlet>
         <servlet-name>DemoServlet</servlet-name>
         <servlet-class>com.servlet.application.DemoServlet</servlet-class>
@@ -8,7 +9,9 @@
         <servlet-name>DemoServlet</servlet-name>
         <url-pattern>/home</url-pattern>
     </servlet-mapping>
+    <!--End Basic servlet mapping--> 
    
+   <!--Processing request parameters-->
     <servlet>
         <servlet-name>ServletGetRequestExample</servlet-name>
         <servlet-class>com.servlet.application.ServletGetRequestExample</servlet-class>
@@ -26,7 +29,9 @@
         <servlet-name>ServletPostRequestExample</servlet-name>
         <url-pattern>/postRequest</url-pattern>
     </servlet-mapping>
+   <!--End Processing request parameters-->
    
+   <!--Initialization Parameteres example-->
     <servlet>
         <servlet-name>InitilizationParameterExample</servlet-name>
         <servlet-class>com.servlet.application.InitilizationParameterExample</servlet-class>
@@ -43,7 +48,9 @@
         <servlet-name>InitilizationParameterExample</servlet-name>
         <url-pattern>/initParam</url-pattern>
     </servlet-mapping>
+    <!--End Initialization Parameteres example-->
    
+   <!--Cookie Servlet Mapping-->
     <servlet>
         <servlet-name>CreateCookieExample</servlet-name>
         <servlet-class>com.servlet.application.cookie.CreateCookieExample</servlet-class>
@@ -70,8 +77,9 @@
         <servlet-name>DynamicCookieCreation</servlet-name>
         <url-pattern>/dynamicCookieRequest</url-pattern>
     </servlet-mapping>
+    <!--End Cookie Servlet Mapping-->
     
-        
+    <!--Session Servlet Mapping-->
     <servlet>
         <servlet-name>CreateSessionExample</servlet-name>
         <servlet-class>com.servlet.application.session.CreateSessionExample</servlet-class>
@@ -107,5 +115,26 @@
         <servlet-name>LogoutSessionExample</servlet-name>
         <url-pattern>/logout</url-pattern>
     </servlet-mapping>
+   <!--End Session Servlet Mapping-->
+   
+   <!--JSP based mapping-->
+   <servlet>
+        <servlet-name>RedirectWithDataToJSP</servlet-name>
+        <servlet-class>com.servlet.application.jsp.RedirectWithDataToJSP</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RedirectWithDataToJSP</servlet-name>
+        <url-pattern>/jspRedirect</url-pattern>
+    </servlet-mapping>
+    
+   <servlet>
+        <servlet-name>StudentController</servlet-name>
+        <servlet-class>com.servlet.application.mvc.controller.StudentController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentController</servlet-name>
+        <url-pattern>/students</url-pattern>
+    </servlet-mapping>
+   <!--End of JSP based mapping-->
    
 </web-app>
