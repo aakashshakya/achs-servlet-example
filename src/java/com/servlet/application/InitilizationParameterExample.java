@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class InitilizationParameterExample extends HttpServlet {
     @Override
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException { 
         ServletConfig config = getServletConfig();
         String dbUserName = config.getInitParameter("dbUsername");
         String dbPassword = config.getInitParameter("dbPassword");

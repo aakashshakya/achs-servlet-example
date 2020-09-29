@@ -66,6 +66,12 @@ public class Students {
     public void setGender(String gender) {
         this.gender = gender;
     }
+
+    @Override
+    public String toString() {
+        return "Students{" + "studentName=" + studentName + ", address=" + address + ", contactNumber=" + contactNumber + ", gender=" + gender + '}';
+    }
+    
     
     
 }

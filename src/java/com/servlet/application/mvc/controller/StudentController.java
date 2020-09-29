@@ -15,16 +15,21 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import com.servlet.application.mvc.model.Students;
 import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
  * @author aakash
  */
 public class StudentController extends HttpServlet {
-
+    private final StudentDAO studentDAO;
+    
+    public StudentController() {
+        this.studentDAO = new StudentDAO();
+    }
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        StudentDAO studentDAO = new StudentDAO();
         List<Students> students = new ArrayList<>();
         try {
             students = studentDAO.getAllStudents();
@@ -39,7 +44,20 @@ public class StudentController extends HttpServlet {
     
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        Students student = new Students();
+        student.setStudentName(request.getParameter("student_name"));
+        student.setAddress(request.getParameter("address"));
+        student.setContactNumber(request.getParameter("contact_number"));
+        student.setGender(request.getParameter("gender"));
         
+        try {
+            studentDAO.addStudent(student, response);
+            response.sendRedirect("/ServletApplication/students");
+        } catch (ClassNotFoundException ex) {
+            System.out.println("Class not found" + ex.getMessage());
+        } catch (SQLException ex) {
+            System.out.println("SQL exception occurred." + ex.getMessage());
+        }
     }
 
 }
