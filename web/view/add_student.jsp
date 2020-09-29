@@ -5,7 +5,7 @@
         <form method="POST" action="<%=application.getContextPath()%>/addStudent">
             <div class="form-group">
                 <label>Student's Full Name</label>
-                <input type="text" name="studentName" class="form-control" placeholder="Student's Full Name">
+                <input type="text" name="student_name" class="form-control" placeholder="Student's Full Name">
             </div>
             <div class="form-group">
                 <label>Student's Address</label>
@@ -13,11 +13,11 @@
             </div>
             <div class="form-group">
                 <label>Student's Contact number</label>
-                <input type="text" class="form-control" placeholder="Student's contact number">
+                <input type="text" name="contact_number" class="form-control" placeholder="Student's contact number">
             </div>
             <div class="form-group">
                 <label>Student's Gender</label>
-                <input type="text" class="form-control" placeholder="Gender">
+                <input type="text" name="gender" class="form-control" placeholder="Gender">
             </div>
             <button type="submit" class="btn btn-primary">Add student</button>
         </form>

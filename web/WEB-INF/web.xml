@@ -135,6 +135,14 @@
         <servlet-name>StudentController</servlet-name>
         <url-pattern>/students</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>StudentController</servlet-name>
+        <servlet-class>com.servlet.application.mvc.controller.StudentController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentController</servlet-name>
+        <url-pattern>/addStudent</url-pattern>
+    </servlet-mapping>
    <!--End of JSP based mapping-->
    
 </web-app>
